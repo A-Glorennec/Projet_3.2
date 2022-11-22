@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/1baf2e5aa5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="dart-sass/sass/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+        <title>Oh My Food</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-logo"><img src="images/logo/ohmyfood.png" alt="ohmyfood">
+            </div>
+        </header>
+
+        <main>
+            <section class="location">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>-->
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Paris, Belleville</p>
+            </section>
+            <!--Section banners-->   
+            <section class="banners">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exeption, selectionnés par nos soins</p>
+                <button class="btn--hover" type="button" name="submit"><a href="#"> Explorer les restaurants</a></button>
+            </section>
+            
+            <!--section fonctionment-->
+            <section class="fonctionment">
+                <h2>Fonctionnement</h2>
+                <ul>
+                    <li class="fonctionment__list--hover">1<i class="fa-solid fa-mobile-screen"></i>Choisissez un restaurant</li>
+                    <li class="fonctionment__list--hover">2<i class="fa-solid fa-list-ul"></i>Composez votre menu</li>
+                    <li class="fonctionment__list--hover">3<i class="fa-solid fa-store"></i>Dégustez au restaurant</li>
+                </ul>
+            </section>
+            <!--section restaurants-->
+            <section class="restaurants">
+                <h2>Restaurants</h2>
+                <div class="container_cards">
+                    
+                        <div class="card">
+                            <a href="page_1.html"  class="black">
+                                <img src="images/restaurants/la_palette_du_gout.jpg" alt="La palette du goût">
+                                <div class="card__description">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                            </a> 
+                            <div class="card__heart--hover">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                    
+                        <div class="card">
+                            <a href="page_2.html"  class="black">
+                                <img src="images/restaurants/la_note_enchantee.jpg" alt="La note enchantée">
+                                <div class="card__description">                                
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div> 
+                            </a>        
+                            <div class="card__heart--hover">     
+                                <i class="fa-regular fa-heart"></i>
+                            </div>                                                             
+                        </div>
+                                            
+                        <div class="card">
+                            <a href="page_3.html"  class="black">
+                                <img src="images/restaurants/a_la_francaise.jpg" alt="A la Française">
+                                <div class="card__description">
+                                    <h3>A la Française</h3>
+                                    <p>Cité rouge</p>
+                                </div>
+                            </a>
+                            <div class="card__heart--hover">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                                          
+                        <div class="card">
+                            <a href="page_4.html"  class="black">
+                                <img src="images/restaurants/les_delices_des_sens.jpg" alt="Le délice des sens">
+                                <div class="card__description">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                            </a>     
+                            <div class="card__heart--hover">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                        </div>
+                </div>
+            </section>
+        </main>
+        <!--footer-->
+        <footer>
+            <h4 class="footer-logo shrikhand">ohmyfood</h4>
+                
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-utensils white"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle white"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:anais.glorennec@gmail.com">Contact</a></li>
+            </ul>
+        </footer>
+            
+        
+    </body>
+</html>
