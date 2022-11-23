@@ -179,4 +179,28 @@ body {
   top: 35px;
 }
 
-/*menu*//*# sourceMappingURL=style.css.map */
+/*menu*/
+.container-menu {
+  background-color: #F7F7F7;
+}
+.container-menu h2 {
+  margin-top: 0;
+}
+
+.menu {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 2px 3px 5px rgb(177, 174, 174);
+  display: flex;
+  position: relative;
+  padding: 5px;
+  margin: 15px 0 15px 0;
+}
+.menu__description > h3, .menu__description p {
+  margin: 5px 0 5px 5px;
+}
+.menu__price {
+  position: absolute;
+  right: 20px;
+  bottom: -5px;
+}/*# sourceMappingURL=style.css.map */
