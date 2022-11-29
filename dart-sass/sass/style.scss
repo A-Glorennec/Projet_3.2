@@ -5,9 +5,10 @@ body
     font-family: roboto;
 }
 
-.shrikhand
+@mixin title-font($color)
 {
-    font-family: shrikhand;
+    font-family: shrikhands;
+    color: $color;
 }
 
 .btn
@@ -167,12 +168,12 @@ body
     width: 100%;
     padding-bottom: 10px;
 
-       &__logo{
-        color: white;
+       &__logo{        
         padding: 15px 0 0 25px;
         font-weight: lighter;
         font-size: 18px;
         margin-top: 0;
+        @include title-font(white);
        }
        &__list{
         text-decoration: none;
@@ -212,6 +213,7 @@ body
     background-color: white;
     padding-left: 10px;
     background-color: #F7F7F7;
+    @include title-font(black);
         i {
             position: absolute;
             font-size: 23px;
@@ -247,6 +249,8 @@ body
             right: 20px;
             bottom: -5px;
         }
+        &__btn
+        
        
 }
 
