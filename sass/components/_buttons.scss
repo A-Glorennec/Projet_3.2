@@ -18,3 +18,8 @@
     display: flex;
     justify-content: center;
 }
+
+.heart > i:hover {
+        font-weight: var(--fa-style,900);
+        color: #9356DC; 
+      }
