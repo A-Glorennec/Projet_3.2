@@ -3,10 +3,6 @@ body {
   font-family: roboto;
 }
 
-.shrikhand {
-  font-family: shrikhand;
-}
-
 .btn {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   border-radius: 20px;
@@ -131,11 +127,12 @@ body {
   padding-bottom: 10px;
 }
 .footer__logo {
-  color: white;
   padding: 15px 0 0 25px;
   font-weight: lighter;
   font-size: 18px;
   margin-top: 0;
+  font-family: shrikhands;
+  color: white;
 }
 .footer__list {
   text-decoration: none;
@@ -171,6 +168,8 @@ body {
   background-color: white;
   padding-left: 10px;
   background-color: #F7F7F7;
+  font-family: shrikhands;
+  color: black;
 }
 .title-heart i {
   position: absolute;
