@@ -1,0 +1,10 @@
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin title-font($color)
+{
+    font-family: 'Shrikhand', cursive;
+    color: $color;
+}

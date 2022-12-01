@@ -1,0 +1,19 @@
+.btn
+{
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px grey;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    margin: 10px 0 0 0;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-btn 
+{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

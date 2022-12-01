@@ -1,0 +1,21 @@
+/*header*/
+
+.header-logo
+{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    position: relative;
+
+        img
+        {
+            width: 50%;
+        }
+        i
+        {
+            position: absolute;
+            left: 30px;
+            bottom: 20px;
+            font-size: x-large;
+            color: black;
+        }
+}
