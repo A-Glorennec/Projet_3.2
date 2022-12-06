@@ -19,6 +19,10 @@
     padding-left: 10px;
     background-color: $background-color;
     @include title-font(black);
+    @include desktop-only {
+        justify-content: center;
+        font-size: 1.2rem;
+    }
         i {
             position: absolute;
             font-size: 23px;
@@ -30,7 +34,6 @@
 /*menu*/
 .container-menu
 {
-    background-color:$background-color;
     margin-top: -10px;
     padding-top: 20px;
         &__title{
@@ -41,18 +44,20 @@
             font-size: 1.1rem;
             border-bottom: 2px solid $color-terciary;
             width: 30px;
-        }
+    }
 }
 
 .menu
 {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 2px 3px 5px rgb(177, 174, 174);
+    box-shadow: $box-shadow;
     display: flex;
     position: relative;
     padding: 5px;
     margin: 15px 0 15px 0;
+    color: black;
+    text-decoration: none;
         &__description{
             & > h3, p{
                 margin: 5px 0 5px 5px;
@@ -64,4 +69,13 @@
             bottom: -5px;
             font-weight: bold;
         }
+}
+
+.container {
+    background-color: $background-color;
+    @include desktop-only {
+    display: flex;
+    justify-content: space-between;
+    }
+
 }
