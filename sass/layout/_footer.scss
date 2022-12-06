@@ -5,6 +5,7 @@
     background-color: #353535;
     padding-bottom: 10px;
 
+
        &__logo{        
         padding: 15px 0 0 25px;
         font-weight: lighter;
@@ -28,3 +29,10 @@
        }
 
 }
+ .container-footer 
+ {
+    @include desktop-only {
+        font-size: 1.1em;
+        margin-left: 45%;
+    }
+ }
