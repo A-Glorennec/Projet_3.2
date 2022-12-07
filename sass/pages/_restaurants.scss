@@ -32,6 +32,11 @@
             font-size: 23px;
             right: 20px;
             top: 35px;
+            @include desktop-only {
+                position: relative;
+                right: -100px;
+
+            }
         }
 }
 
@@ -42,6 +47,7 @@
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 3rem;
+    margin: 0 10px 0 10px;
     }
 }
 
@@ -78,9 +84,13 @@
     margin: 15px 0 15px 0;
     color: black;
     text-decoration: none;
+    animation: menu-appear 1s;
+  
         &__description{
-            & > h3, p{
+            @include nowrap;
+            & > h3, > p{
                 margin: 5px 0 0px 5px;
+                @include nowrap;
             }   
        }
         &__price{
@@ -90,5 +100,17 @@
             & > p {
                 margin-bottom: 3px;
             }
-         }   
+        }
 }
+
+.container-btn {
+    margin: 40px;
+    text-align: center;
+
+
+    &__btn {
+        @include button;
+        padding: 10px 25px 10px 25px;
+    } 
+}
+

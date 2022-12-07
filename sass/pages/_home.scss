@@ -26,21 +26,22 @@
     margin-bottom: 40px;
     background-color: $background-color;
 
-
-        &__link {       
-              
-            &--white {
-                color: white;
-                text-decoration: none;  
-            }
-        }
         h1 {
             margin: 0;
+        }
+        &__btn {
+            @include button;
         }
 } 
 
 
 /*section fonctionment*/
+
+.home-title
+{
+    margin-left: 25px;
+    padding-bottom: 20px;
+}
 
 .fonctionment
 {
@@ -151,6 +152,7 @@
             right: 20px;
             bottom: 20px;
             font-size: 1.2rem;
+            cursor: pointer;
         }
 
         &__new{
