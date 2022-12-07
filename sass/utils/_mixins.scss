@@ -9,3 +9,25 @@
         @content;
     }
 }
+
+@mixin nowrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@mixin button {
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    border-radius: 20px;
+    box-shadow: $box-shadow;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    margin: 10px 0 0 0;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+      }
+}
