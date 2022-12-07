@@ -5,5 +5,6 @@ $background-color: #F7F7F7;
 $box-shadow: 2px 3px 5px rgb(177, 174, 174);
 
 $breakpoints : (
-    desktop : 992px
+    desktop : 992px,
+    tablet : min-width 768px and max-width  992px,
 );

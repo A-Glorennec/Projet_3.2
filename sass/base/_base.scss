@@ -2,11 +2,3 @@ body {
     margin: 0px;
 }
 
-h2 {
-    padding-left: 20px;
-    @include desktop-only {
-        padding-left: 45px;
-        font-size: 1.7rem;
-        padding-bottom: 20px;
-    }
-}
