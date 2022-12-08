@@ -1,3 +1,18 @@
+/*$breakpoints : (
+    desktop : 992px,
+    tablet : 768px,
+);*/
+/*@mixin desktop-only {
+    @media screen and (min-width : map-get($breakpoints, desktop) ) {
+        @content;
+    }   
+}
+
+@mixin tablet-only {
+    @media (min-width: map-get($breakpoints, tablet)) {
+        @content;
+    }
+}*/
 .container-loader {
   background-color: ghostwhite;
   position: fixed;
@@ -16,7 +31,7 @@
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 0s linear forwards;
+  -webkit-animation: spin 3s linear forwards;
   animation: spin 3s linear forwards;
   margin: auto;
   position: fixed;
@@ -58,7 +73,7 @@
     width: 0;
   }
 }
-@-webkit-keyframes menu-appear {
+@-webkit-keyframes animation1 {
   0% {
     transform: scale(0);
   }
@@ -66,7 +81,7 @@
     transform: scale(1);
   }
 }
-@keyframes menu-appear {
+@keyframes animation1 {
   0% {
     transform: scale(0);
   }
@@ -135,13 +150,20 @@ body {
   padding: 5px 0 5px 0;
 }
 
-@media all and (min-width: 992px) {
+/*.container-footer 
+{
+   @include desktop-only {
+       font-size: 1.1em;
+       margin-left: 45%;
+   }
+}*/
+/*responsive design desktop*/
+@media screen and (min-width: 992px) {
   .container-footer {
     font-size: 1.1em;
     margin-left: 45%;
   }
 }
-
 /*section location*/
 .location {
   display: flex;
@@ -191,12 +213,6 @@ body {
 .fonctionment ul {
   padding-left: 0;
 }
-@media all and (min-width: 992px) {
-  .fonctionment ul {
-    display: flex;
-    justify-content: space-around;
-  }
-}
 .fonctionment__list {
   border-radius: 15px;
   box-shadow: 2px 3px 5px rgb(177, 174, 174);
@@ -205,13 +221,11 @@ body {
   margin-bottom: 25px;
   margin-left: 20px;
   font-weight: 500;
-}
-@media all and (min-width: 992px) {
-  .fonctionment__list {
-    width: 25%;
-    padding: 30px 30px 30px 20px;
-    font-size: 1.1rem;
-  }
+  /*@include desktop-only {
+      width: 25%;
+      padding: 30px 30px 30px 20px;
+      font-size: 1.1rem ;
+  }*/
 }
 .fonctionment__list > span {
   border: 5px solid #9356DC;
@@ -233,13 +247,15 @@ body {
 }
 
 /*section restaurant*/
-@media all and (min-width: 992px) {
-  .container-cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
+/*.container-cards
+{
+    @include desktop-only {
+        display : flex;
+        flex-wrap: wrap; 
 
+    }
+
+}*/
 .restaurants {
   background-color: #F7F7F7;
   padding: 20px 0 30px 0;
@@ -256,12 +272,11 @@ body {
   position: relative;
   border-radius: 15px;
   box-shadow: 2px 3px 5px rgb(177, 174, 174);
-}
-@media all and (min-width: 992px) {
-  .card {
-    width: 22%;
-    padding-bottom: 20px;
-  }
+  /*  @include desktop-only {
+        width: 22%;
+        padding-bottom: 20px;
+
+    }*/
 }
 .card__link--black {
   color: black;
@@ -277,12 +292,10 @@ body {
 }
 .card__description > h3, .card__description p {
   margin: 5px 0 3px 5px;
-}
-@media all and (min-width: 992px) {
-  .card__description > h3, .card__description p {
-    font-size: 1.2em;
-    padding-left: 10px;
-  }
+  /*    @include desktop-only {
+          font-size: 1.2em;
+          padding-left: 10px;
+      }*/
 }
 .card__heart {
   position: absolute;
@@ -303,16 +316,39 @@ body {
   font-weight: 500;
 }
 
+/*responsive design desktop*/
+@media screen and (min-width: 992px) {
+  .fonctionment ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .fonctionment__list {
+    width: 25%;
+    padding: 30px 30px 30px 20px;
+    font-size: 1.1rem;
+  }
+  .container-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 22%;
+    padding-bottom: 20px;
+  }
+  .card__description > h3, .card__description p {
+    font-size: 1.2em;
+    padding-left: 10px;
+  }
+}
+/*Reponsive design tablette*/
 .menu-pic img {
   height: 220px;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-@media all and (min-width: 992px) {
-  .menu-pic img {
-    height: 350px;
-  }
+  /*  @include desktop-only {
+        height: 350px;
+    }*/
 }
 
 .title-heart {
@@ -328,37 +364,32 @@ body {
   background-color: #F7F7F7;
   font-family: "Shrikhand", cursive;
   color: black;
-}
-@media all and (min-width: 992px) {
-  .title-heart {
-    justify-content: center;
-    font-size: 1.2rem;
-  }
+  /*  @include desktop-only {
+        justify-content: center;
+        font-size: 1.2rem;
+    }*/
 }
 .title-heart i {
   position: absolute;
   font-size: 23px;
   right: 20px;
   top: 35px;
-}
-@media all and (min-width: 992px) {
-  .title-heart i {
-    position: relative;
-    right: -100px;
-  }
+  /*   @include desktop-only {
+         position: relative;
+         right: -100px;
+
+     }*/
 }
 
 /*menu*/
 .container {
   background-color: #F7F7F7;
-}
-@media all and (min-width: 992px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 3rem;
-    margin: 0 10px 0 10px;
-  }
+  /*   @include desktop-only {
+     display: grid;
+     grid-template-columns: repeat(3, minmax(0, 1fr));
+     gap: 3rem;
+     margin: 0 10px 0 10px;
+     }*/
 }
 
 .container-menu {
@@ -374,13 +405,11 @@ body {
   border-bottom: 2px solid #99E2D0;
   width: 30px;
   padding-left: 10px;
-}
-@media all and (min-width: 992px) {
-  .container-menu__title {
-    padding-left: 10px;
-    font-size: 1.2rem;
-    padding-bottom: 10px;
-  }
+  /*   @include desktop-only {
+         padding-left: 10px;
+         font-size: 1.2rem;
+         padding-bottom: 10px;
+     }*/
 }
 
 .menu {
@@ -393,8 +422,6 @@ body {
   margin: 15px 0 15px 0;
   color: black;
   text-decoration: none;
-  -webkit-animation: menu-appear 1s;
-          animation: menu-appear 1s;
 }
 .menu__description {
   white-space: nowrap;
@@ -434,4 +461,46 @@ body {
 }
 .container-btn__btn:hover {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
+}
+
+.delay-1 {
+  -webkit-animation: animation1 1s forwards 0s;
+          animation: animation1 1s forwards 0s;
+}
+
+.delay-2 {
+  -webkit-animation: animation1 2s forwards 0s;
+          animation: animation1 2s forwards 0s;
+}
+
+.delay-3 {
+  -webkit-animation: animation1 3s forwards 0s;
+          animation: animation1 3s forwards 0s;
+}
+
+/*responsive design desktop*/
+@media screen and (min-width: 992px) {
+  .menu-pic img {
+    height: 350px;
+  }
+  .title-heart {
+    justify-content: center;
+    font-size: 1.2rem;
+  }
+  .title-heart i {
+    position: relative;
+    right: -100px;
+  }
+  /*menu*/
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+    margin: 0 10px 0 10px;
+  }
+  .container-menu__title {
+    padding-left: 10px;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+  }
 }/*# sourceMappingURL=main.css.map */

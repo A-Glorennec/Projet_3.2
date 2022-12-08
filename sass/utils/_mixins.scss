@@ -1,14 +1,14 @@
-@mixin desktop-only {
-    @media all and (min-width : map-get($breakpoints, desktop) ) {
+/*@mixin desktop-only {
+    @media screen and (min-width : map-get($breakpoints, desktop) ) {
         @content;
     }   
 }
 
 @mixin tablet-only {
-    @media all and (min-width: map-get($breakpoints, tablet)) {
+    @media (min-width: map-get($breakpoints, tablet)) {
         @content;
     }
-}
+}*/
 
 @mixin nowrap {
     white-space: nowrap;

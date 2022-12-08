@@ -29,10 +29,19 @@
        }
 
 }
- .container-footer 
+ /*.container-footer 
  {
     @include desktop-only {
         font-size: 1.1em;
         margin-left: 45%;
     }
- }
+ }*/
+
+ /*responsive design desktop*/
+@media screen and (min-width: 992px) {
+
+    .container-footer {
+        font-size: 1.1em;
+        margin-left: 45%;
+    }
+}

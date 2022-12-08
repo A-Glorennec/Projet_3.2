@@ -19,7 +19,7 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    -webkit-animation: spin 0s linear forwards;
+    -webkit-animation: spin 3s linear forwards;
     -o-animation: spin 3s linear forwards;
     animation: spin 3s linear forwards;
 
@@ -56,11 +56,12 @@
     }
 }
 
-@keyframes menu-appear {
-    0% {
-      transform: scale(0)
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
+@keyframes animation1 {
+0% {
+    transform: scale(0);
+}
+100% {
+    transform: scale(1);
+}
+
+}
