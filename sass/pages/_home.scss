@@ -45,13 +45,8 @@
 
 .fonctionment
 {
-
-    ul {
+   ul {
         padding-left: 0;
-        @include desktop-only {
-            display: flex;
-            justify-content: space-around;
-        }
     }
     &__list {
         border-radius: 15px;
@@ -61,11 +56,11 @@
         margin-bottom: 25px;
         margin-left: 20px;
         font-weight: 500;
-        @include desktop-only {
+        /*@include desktop-only {
             width: 25%;
             padding: 30px 30px 30px 20px;
             font-size: 1.1rem ;
-        }
+        }*/
             >span {
                 border: 5px solid $color-primary;
                 border-radius: 50%;
@@ -90,13 +85,15 @@
 
 
 /*section restaurant*/
-.container-cards
+/*.container-cards
 {
     @include desktop-only {
         display : flex;
-        flex-wrap: wrap;       
+        flex-wrap: wrap; 
+
     }
-}
+
+}*/
 
 .restaurants
 {
@@ -117,11 +114,11 @@
     position: relative;
     border-radius: 15px;
     box-shadow: $box-shadow;
-    @include desktop-only {
+  /*  @include desktop-only {
         width: 22%;
         padding-bottom: 20px;
         
-    }
+    }*/
 
         &__link{
 
@@ -141,10 +138,10 @@
             & > h3, p
             {
                 margin: 5px 0 3px 5px;
-                @include desktop-only {
+            /*    @include desktop-only {
                     font-size: 1.2em;
                     padding-left: 10px;
-                }
+                }*/
             }
         }
         &__heart{
@@ -169,3 +166,44 @@
         }
 }
 
+/*responsive design desktop*/
+@media screen and (min-width: 992px) {
+
+    .fonctionment {
+
+        ul{
+            display: flex;
+            justify-content: space-around;
+        }
+        &__list {
+            width: 25%;
+            padding: 30px 30px 30px 20px;
+            font-size: 1.1rem ;
+        }
+    }
+    
+    .container-cards {
+        display : flex;
+        flex-wrap: wrap; 
+    }
+
+    .card {
+        width: 22%;
+        padding-bottom: 20px;
+
+        &__description{
+            & > h3, p{ 
+                font-size: 1.2em;
+                padding-left: 10px;
+                }
+            }
+        }
+}
+
+/*Reponsive design tablette*/
+@media all and (min-width: 768px) and (max-width :992px) {
+
+    
+}
+
+    
