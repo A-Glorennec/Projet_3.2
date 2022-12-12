@@ -89,6 +89,7 @@
 
 
         &__description{
+            width: 80%;
             @include nowrap;
             & > h3, > p{
                 margin: 5px 0 0px 5px;
@@ -114,7 +115,8 @@
             transition-duration: 0.5s;
         }
         &:hover &__confirmation {
-            margin-right: -5px;
+           /* margin-right: -10px;*/
+           transform: translateX(-65px);
         }
         &__icon {
             color: white;
@@ -204,6 +206,7 @@
 
     .menu {
         width: 100%;
+        margin-right: 10px;
     }
 
     .title-heart {
