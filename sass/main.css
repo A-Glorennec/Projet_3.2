@@ -489,6 +489,9 @@ body {
 .menu:hover .menu__icon {
   transform: rotate(360deg);
 }
+.menu:hover .menu__price {
+  transform: translateX(-35px);
+}
 
 .container-btn {
   margin: 40px;

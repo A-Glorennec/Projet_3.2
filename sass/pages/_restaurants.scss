@@ -126,6 +126,10 @@
         &:hover &__icon {
             transform: rotate(360deg);
         }
+        &:hover &__price {
+            transform: translateX(-35px);
+        }
+
         
 }
 
