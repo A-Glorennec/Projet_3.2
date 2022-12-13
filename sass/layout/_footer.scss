@@ -41,7 +41,19 @@
 @media screen and (min-width: 992px) {
 
     .container-footer {
-        font-size: 1.1em;
-        margin-left: 45%;
+        display: flex;
+        font-size: large;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                width: 80%;
+                padding-left: 50px;
+            }
+    }
+
+    .footer__logo {
+        font-size: 1.4rem;
+        display: inline-block;
+        align-self: center;
     }
 }

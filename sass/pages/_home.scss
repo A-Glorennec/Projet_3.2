@@ -107,9 +107,12 @@
                 padding: 0 15px 0 10px;
                 color: #7E7E7E;
             }
-        &:hover, i:hover {
+        &:hover {
             background-color: #F5EDFF;
             color: $color-primary;
+                i {
+                    color: $color-primary;
+                }
         }    
     }
 }
