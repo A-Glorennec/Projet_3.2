@@ -504,7 +504,11 @@ body {
   transform: rotate(360deg);
 }
 .menu:hover .menu__price {
-  transform: translateX(-50px);
+  transform: translateX(-30px);
+  transition-duration: 0.5s;
+}
+.menu:hover .menu__description {
+  width: 60%;
   transition-duration: 0.5s;
 }
 

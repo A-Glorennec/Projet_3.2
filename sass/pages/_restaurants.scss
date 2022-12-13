@@ -127,9 +127,16 @@
             transform: rotate(360deg);
         }
         &:hover &__price {
-            transform: translateX(-50px);
+            transform: translateX(-30px);
             transition-duration: 0.5s;
-        }        
+        }
+        &:hover &__description {
+          width: 60%;
+          transition-duration: 0.5s;
+          
+        }
+
+        
 }
 
 .container-btn {
