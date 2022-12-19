@@ -4,10 +4,6 @@
     height: 220px;
     width: 100%;
     object-fit: cover;
-  /*  @include desktop-only {
-        height: 350px;
-    }*/
-
 }
 
 .title-heart
@@ -23,32 +19,17 @@
     padding-left: 10px;
     background-color: $background-color;
     @include title-font(black);
-  /*  @include desktop-only {
-        justify-content: center;
-        font-size: 1.2rem;
-    }*/
         i {
             position: absolute;
             font-size: 23px;
             right: 20px;
             top: 35px;
-         /*   @include desktop-only {
-                position: relative;
-                right: -100px;
-
-            }*/
         }
 }
 
 /*menu*/
 .container {
     background-color: $background-color;
- /*   @include desktop-only {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 3rem;
-    margin: 0 10px 0 10px;
-    }*/
 }
 
 .container-menu
@@ -65,12 +46,6 @@
             border-bottom: 2px solid $color-terciary;
             width: 30px;
             padding-left: 10px;
-         /*   @include desktop-only {
-                padding-left: 10px;
-                font-size: 1.2rem;
-                padding-bottom: 10px;
-            }*/
-
         }
 }
 
@@ -115,7 +90,6 @@
             transition-duration: 0.5s;
         }
         &:hover &__confirmation {
-           /* margin-right: -10px;*/
            transform: translateX(-65px);
         }
         &__icon {
